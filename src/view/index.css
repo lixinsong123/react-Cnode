@@ -1,0 +1,133 @@
+.pageWrap{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrap{
+    max-width: 980px;
+    margin: 0 auto ;
+}
+
+#logo{
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.headerDivider{
+    height: 44px;
+    margin: 10px 0;
+    float: left;
+}
+
+#nav{
+    float: left;
+    background: none;
+    border: none;
+    line-height: 62px;
+}
+#nav a{
+    color: white;
+    margin-left: 30px;
+}
+#nav a:hover{
+    color: #1890ff;
+}
+#nav .ant-menu-item-selected  a{
+    color: #1890ff;
+}
+.xsNav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+.main{
+    flex: 1;
+}
+.main .wrap{
+    border: 1px solid #ccc;
+    border-top: none;
+    overflow: hidden;
+}
+#indexMenu {
+    border-right: none;
+}
+#indexMenu li{
+    transition: 0.5s;
+    margin-right: -1px;
+    text-align: center;
+}
+#indexMenu .ant-menu-item-selected{
+    border-right:3px solid #1890ff;   
+}
+#indexMenu .ant-menu-item-active:hover{
+    border-right:3px solid #1890ff;
+    background-color: #e6f7ff;
+}
+#indexXXMenu li{
+    flex: 1;
+    margin: 0 0 -1px 0;
+    text-align: center;
+}
+.indexSider{
+    border-right: 1px solid #ccc;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+/* 
+    手动响应式
+@media all and (max-width:767px){
+    #indexMenu{
+        display: flex; 
+        border-bottom: 1px solid #ccc;
+    }
+    #indexMenu li{
+        flex: 1;
+        margin: 0 0 -1px 0;
+    }
+    #indexMenu .ant-menu-item-active:hover{
+        border: none;
+        border-bottom:1px solid #1890ff; 
+    }
+    #indexList{
+        border: none;
+    }
+} */
+
+#indexList .ant-list-item{
+    padding: 10px;
+}
+#indexList p{
+    margin: 0;
+}
+#replayList  .ant-list-item-meta-avatar{
+    display: block;
+}
+
+.wrap .userAvatar{
+    display: block;
+    margin : 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.userInfo{
+    text-align: center;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+.userList {
+    line-height: 32px;
+}
+.userList .userName{
+    margin: 0 10px 0 5px;
+}   
+.userList .ant-list-item{
+    position: relative;
+}
+.userList time {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
